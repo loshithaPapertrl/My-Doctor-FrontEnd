@@ -27,15 +27,15 @@
             routerLink="/dashboard/saved-items"
             routerLinkActive="bg-gray-200"
             class="font-semibold text-gray-500 hover:text-primary"
-            ><mat-icon class="mr-2">list</mat-icon> My Patients</a
+            ><mat-icon class="mr-2">list</mat-icon> My Medicines</a
           >
-          <a
-            mat-list-item
-            routerLink="/dashboard/orders"
-            routerLinkActive="bg-gray-200"
-            class="font-semibold text-gray-500 hover:text-primary"
-            ><mat-icon class="mr-2">article</mat-icon> Appointments </a
-          >
+<!--          <a-->
+<!--            mat-list-item-->
+<!--            routerLink="/dashboard/orders"-->
+<!--            routerLinkActive="bg-gray-200"-->
+<!--            class="font-semibold text-gray-500 hover:text-primary"-->
+<!--            ><mat-icon class="mr-2">article</mat-icon> Appointments </a-->
+<!--          >-->
           <a (click)="onLogout()" mat-list-item class="font-semibold text-gray-500 hover:text-primary"><mat-icon class="mr-2">logout</mat-icon> Logout</a>
         </mat-nav-list>
       </div>
@@ -75,12 +75,12 @@
                 <div class="rounded-md border overflow-hidden h-full">
                   <div class="user text-center bg-primary py-10 px-5">
                     <img class="ml-auto mr-auto" src="assets/images/avatar.png" alt="abraham lincoln" />
-                    <h4 class="text-white mt-3">Dr Ravindu masinghe</h4>
+                    <h4 class="text-white mt-3">Kasun anjana</h4>
                   </div>
                   <mat-nav-list class="_sidenav">
                     <a
                       mat-list-item
-                      routerLink="/dashboard"
+                      routerLink="/user-dashboard"
                       [routerLinkActiveOptions]="{ exact: true }"
                       routerLinkActive="bg-gray-200"
                       class="font-semibold text-gray-500 hover:text-primary"
@@ -88,35 +88,25 @@
                     >
                     <a
                       mat-list-item
-                      routerLink="/dashboard/profile"
+                      routerLink="/user-dashboard/profile"
                       routerLinkActive="bg-gray-200"
                       class="font-semibold text-gray-500 hover:text-primary"
                       ><mat-icon class="mr-2">account_circle</mat-icon> View my profile</a
                     >
                     <a
                       mat-list-item
-                      routerLink="/dashboard/saved-items"
+                      routerLink="/user-dashboard/saved-items"
                       routerLinkActive="bg-gray-200"
                       class="font-semibold text-gray-500 hover:text-primary"
-                      ><mat-icon class="mr-2">list</mat-icon> My Patients</a
+                      ><mat-icon class="mr-2">list</mat-icon> My Medicines</a
                     >
-                    <a
-                      mat-list-item
-                      routerLink="/dashboard/orders"
-                      routerLinkActive="bg-gray-200"
-                      class="font-semibold text-gray-500 hover:text-primary"
-                      ><mat-icon class="mr-2">article</mat-icon> Appointments </a
-                    >
-
-                    <a
-                      mat-list-item
-                      href="https://industrial.ubidots.com/app/dashboards/64a98727e7071e001022e332"
-                      routerLinkActive="bg-gray-200"
-                      class="font-semibold text-gray-500 hover:text-primary"
-                      ><mat-icon class="mr-2">article</mat-icon> ECG Monitoring system </a
-                    >
-
-
+<!--                    <a-->
+<!--                      mat-list-item-->
+<!--                      routerLink="/dashboard/orders"-->
+<!--                      routerLinkActive="bg-gray-200"-->
+<!--                      class="font-semibold text-gray-500 hover:text-primary"-->
+<!--                      ><mat-icon class="mr-2">article</mat-icon> Appointments </a-->
+<!--                    >-->
                     <a (click)="onLogout()" mat-list-item class="font-semibold text-gray-500 hover:text-primary"><mat-icon class="mr-2">logout</mat-icon> Logout</a>
                   </mat-nav-list>
                 </div>
