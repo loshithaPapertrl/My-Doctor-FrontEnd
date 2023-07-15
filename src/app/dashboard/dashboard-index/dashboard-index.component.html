@@ -37,15 +37,15 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let order of orders" class="border">
+				<tr *ngFor="let patient of patients" class="border">
 					<td>
-						<a class="text-primary" href="/">#{{order?.id}}</a>
+						<a class="text-primary" href="/">#{{patient?.id}}</a>
 					</td>
 					<td>
-						{{order?.orderBy | titlecase }}
+						{{patient?.orderBy | titlecase }}
 					</td>
 					<td>
-						<span>{{order?.created}}</span>
+						<span>{{patient?.created}}</span>
 					</td>
 					<td class="text-right">
 						<button class="action_icon__btn" mat-icon-button [matMenuTriggerFor]="menu">

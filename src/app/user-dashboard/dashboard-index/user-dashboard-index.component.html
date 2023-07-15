@@ -33,21 +33,30 @@
 					<th>
 						<span class="text-gray-800">Appointment Date</span>
 					</th>
+          <th>
+						<span class="text-gray-800">Prescription</span>
+					</th>
 					<th class="text-right">Action</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr *ngFor="let order of orders" class="border">
+				<tr *ngFor="let prescriptions of prescriptions" class="border">
 					<td>
-						<a class="text-primary" href="/">#{{order?.id}}</a>
+						<a class="text-primary" href="/">#{{prescriptions?.id}}</a>
 					</td>
 					<td>
-						{{order?.orderBy | titlecase }}
+						{{prescriptions?.orderBy | titlecase }}
 					</td>
 					<td>
-						<span>{{order?.created}}</span>
+						<span>{{prescriptions?.created}}</span>
 					</td>
-					<td class="text-right">
+          <td>
+            <a href="assets/images/Dr.Indraguptha-2023-07-01.jpg" download class="download-link">
+              Download
+            </a>
+          </td>
+
+          <td class="text-right">
 						<button class="action_icon__btn" mat-icon-button [matMenuTriggerFor]="menu">
 							<mat-icon>more_vert</mat-icon>
 						</button>
