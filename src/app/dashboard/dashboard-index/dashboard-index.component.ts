@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'll-dashboard-index',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardIndexComponent implements OnInit {
   patients = [];
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.patients = [
@@ -52,5 +53,9 @@ export class DashboardIndexComponent implements OnInit {
         price: 2145.0
       }
     ];
+  }
+
+  navigateToPrescription(): void {
+    this.router.navigate(['/dashboard/prescription']);
   }
 }

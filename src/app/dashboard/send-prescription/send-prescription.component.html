@@ -1,0 +1,36 @@
+<div>
+  <div class="filter flex items-center mb-5">
+
+    <div class="container">
+      <h1>Create Prescription</h1>
+      <form>
+        <div class="form-group">
+          <label for="patientName">Patient Name</label>
+          <select id="patientName" class="form-control">
+            <option value="John Doe">John Doe</option>
+            <option value="Jane Smith">Jane Smith</option>
+            <option value="Michael Johnson">Michael Johnson</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="prescriptionImg">Prescription Image</label>
+          <input type="file" id="prescriptionImg" class="form-control-file">
+        </div>
+        <div class="form-group">
+          <label for="specialNote">Special Note</label>
+          <textarea id="specialNote" class="form-control" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="nextAppointment">Next Appointment Date</label>
+          <input type="date" id="nextAppointment" class="form-control">
+        </div>
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">Send</button>
+          <a href="/dashboard" class="btn btn-secondary">Back</a>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+</div>
